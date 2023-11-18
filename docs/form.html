@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>FORMULARIO</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <form id="meuform">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>FORMULARIO DE CADASTRO</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 m-3">
+                <label for="name">Nome Completo</label>
+                <input type="text" name="name" id="nome">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 m-3">
+                <label>Gênero:</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="genero" id="generoM" value="Masculino">
+                    <label class="form-check-label" for="generoM">Masculino</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="genero" id="generoF" value="Feminino">
+                    <label class="form-check-label" for="generoF">Feminino</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="genero" id="generoO" value="Outro">
+                    <label class="form-check-label" for="generoO">Outro</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 m-3">
+                <label for="idade">Idade:</label>
+                <input type="number" class="" id="idade" name="idade">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 m-3">
+                <label for="altura">Altura:</label>
+                <input type="number" class="" id="altura" name="altura">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 m-3">
+                <p>Toma algum remedio controlado?:</p>
+                <input type="checkbox" class="" id="remedioS" name="remedio">
+                <label for="remedio">SIM</label>
+                <input type="checkbox" class="" id="remedioN" name="remedio">
+                <label for="remedio">NÃO</label>
+            </div>
+        </div>
+        <div id="imagemContainer"></div>
+        <div class="row">
+            <div class="col-md-12 m-3">
+                <p>Pratica exercicios fisicos?:</p>
+                <input type="checkbox" class="" id="exercicioS" name="exercicio">
+                <label for="exercicio">SIM</label>
+                <input type="checkbox" class="" id="exercicioN" name="exercicio">
+                <label for="exercicio">NÃO</label>
+            </div>
+        </div>
+        <div id="imagemContainerex"></div>
+        <div class="row">
+            <div class="col-md-12 m-3">
+                <p>Possui alergia alimentar?:</p>
+                <input type="checkbox" class="" id="alergiaS" name="alergia">
+                <label for="alergia">SIM</label>
+                <input type="checkbox" class="" id="alergiaN" name="alergia">
+                <label for="alergia">NÃO</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 m-3">
+                <label for="comida">Se Sim qual?</label>
+                <input type="text" name="comida">
+            </div>
+        </div>
+        <div id="imagemContaineral"></div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
